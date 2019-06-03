@@ -139,7 +139,7 @@ protected:
     int forward_layer(int layer_index, std::vector<Mat>& blob_mats, std::vector<VkMat>& blob_mats_gpu, VkCompute& cmd, Option& opt) const;
 #endif // NCNN_VULKAN
 
-protected:
+public:
     std::vector<Blob> blobs;
     std::vector<Layer*> layers;
 
