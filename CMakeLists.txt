@@ -10,12 +10,12 @@ if(NOT DEFINED CMAKE_INSTALL_PREFIX)
 set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install" CACHE PATH "Installation Directory")
 endif()
 message(STATUS "CMAKE_INSTALL_PREFIX = ${CMAKE_INSTALL_PREFIX}")
+
 cmake_minimum_required(VERSION 3.0)
+
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE release CACHE STRING "Choose the type of build" FORCE)
 endif()
-
-set(CMAKE_BUILD_TYPE Debug)
 
 project(ncnn)
 
@@ -85,7 +85,7 @@ endif()
 
 ##############################################
 
-add_subdirectory(examples)
+# add_subdirectory(examples)
 add_subdirectory(benchmark)
 add_subdirectory(src)
 if(NOT ANDROID AND NOT IOS)

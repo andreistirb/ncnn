@@ -41,6 +41,3 @@ target_link_libraries(shufflenetv2 ${NCNN_EXAMPLE_LINK_LIBRARIES})
 
 add_executable(peleenetssd_seg peleenetssd_seg.cpp)
 target_link_libraries(peleenetssd_seg ${NCNN_EXAMPLE_LINK_LIBRARIES})
-
-add_executable(test_net test_net.cpp)
-target_link_libraries(test_net ${NCNN_EXAMPLE_LINK_LIBRARIES})
