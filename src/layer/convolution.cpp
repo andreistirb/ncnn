@@ -52,8 +52,6 @@ int Convolution::load_param(const ParamDict& pd)
 int Convolution::load_model(const ModelBin& mb)
 {
     weight_data = mb.load(weight_data_size, 0);
-    printf("Weight data size is: %d\n", weight_data_size);
-    printf("Loading convolution weights %f %f %f %f %f \n",weight_data[0], weight_data[1], weight_data[2], weight_data[3], weight_data[4]);
     if (weight_data.empty())
         return -100;
 

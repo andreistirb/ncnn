@@ -93,10 +93,10 @@ int ReLU6_arm::forward_inplace_int8(Mat& bottom_top_blob, const Option& opt) con
     return 0;
 }
 
-int ReLU6_arm::forward_inplace(Mat& bottom_top_blob, const Option& opt) const
+int ReLU_arm::forward_inplace(Mat& bottom_top_blob, const Option& opt) const
 {
     if (bottom_top_blob.elemsize == 1u)
-        return ReLU6_arm::forward_inplace_int8(bottom_top_blob, opt);
+        return ReLU_arm::forward_inplace_int8(bottom_top_blob, opt);
 
     int w = bottom_top_blob.w;
     int h = bottom_top_blob.h;

@@ -89,7 +89,6 @@ int Layer::load_param(const ParamDict& /*pd*/)
 
 int Layer::load_model(const ModelBin& /*mb*/)
 {
-//    printf("here we should load the actual model but we do not do anything\n");
     return 0;
 }
 

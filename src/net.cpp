@@ -639,9 +639,8 @@ int Net::load_model(FILE* fp)
             ret = -1;
             break;
         }
-//        printf("Loading model from ModelBinFromStdio object\n");
+
         int lret = layer->load_model(mb);
-//	printf("Done loading model from modelbinfromstdio object\n");
         if (lret != 0)
         {
             fprintf(stderr, "layer load_model %d failed\n", (int)i);
