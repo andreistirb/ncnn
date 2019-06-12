@@ -57,7 +57,7 @@ int ConvolutionDepthWise::load_param(const ParamDict& pd)
 
 int ConvolutionDepthWise::load_model(const ModelBin& mb)
 {
-    weight_data = mb.load(weight_data_size, 0);
+    weight_data = mb.load(weight_data_size, 1);
     if (weight_data.empty())
         return -100;
 
